@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.messages{
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.mesages::-webkit-scrollbar {
+    display: none;
+}

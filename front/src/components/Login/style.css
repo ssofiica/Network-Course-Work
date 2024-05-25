@@ -1,0 +1,103 @@
+.modal{
+    width: 60%;
+    bottom: 100px;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+.login-image{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+.overlay-text{
+    position: absolute;
+    bottom:50%;
+    left: 10%;
+}
+.overlay-text p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 80%
+}
+.login{
+    margin-top: 0;
+    background-color: #F4F4F4;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 8% 10%;
+}
+.login input{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #636363;
+    border-radius: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: none;
+}
+button:hover{
+    background-color: #C4D600;
+}
+.button{
+    background-color: #e0f12a;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    border: none;
+    width: 100%;
+    outline: none;
+    align-items: center;
+}
+.header{
+    padding-top: 30px;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.logo{
+    width: auto;
+    height: 40px;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.message{
+    margin-top: 10px;
+}
+.my-message{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+}
+.my-message .name{
+    margin-right: 14px;
+}
+.name{
+    color: #C4D600;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-left: 14px;
+}
+.text{
+    background-color: #F6F6F6;
+    padding: 8px 14px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 50%;
+    font-size: 14px;
+}

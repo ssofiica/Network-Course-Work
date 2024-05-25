@@ -1,0 +1,25 @@
+.input{
+    margin-top: 20px;
+    border: 1px solid #636363;
+    border-radius: 20px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.input input{
+    border: none;
+    width: 100%;
+    outline: none;
+    margin-left: 10px;
+}
+.input button{
+    width: 30px;
+    background-color: #e0f12a;
+    margin-left: 10px;
+    border: none;
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
