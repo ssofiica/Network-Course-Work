@@ -5,7 +5,7 @@ export const WS_HOST = 'ws://localhost:9000'
 
 interface Message {
   login: string;
-  text: string;
+  message: string;
   date: string;
   my: boolean;
   error: boolean;

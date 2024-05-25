@@ -3,7 +3,7 @@ const http = require('http');
 const express = require('express');
 const axios = require('axios');
 
-const TRANSPORT_ADDRESS = 'http://localhost:3001/';
+const TRANSPORT_ADDRESS = 'https://95ed-195-19-60-234.ngrok-free.app';
 const PORT = 9000;
 
 const app = express();
@@ -21,8 +21,9 @@ const wsServer = new WebSocketServer.Server({ server });
 
 wsServer.on('connection', client => {
     client.on('message', m => {
-        message = JSON.parse(m);
-        axios.post(TRANSPORT_ADDRESS, message).then(() => client.send(JSON.stringify({ message })));
+        const message = JSON.parse(m);
+        const address = TRANSPORT_ADDRESS + '/api/v1/message'
+        axios.post(address, message).then(() => client.send(JSON.stringify({ message })));
     });
     client.on('close', () => {
         wsServer.clients.delete(client);

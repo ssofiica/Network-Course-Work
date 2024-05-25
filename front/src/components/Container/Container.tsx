@@ -44,7 +44,7 @@ const Container: React.FC<Props> = ({ socket }) => {
       {messages && messages.length > 0 ? (
       <div className="messages">
         {messages.map((msg, index) => (
-        <Message key={index} login={msg.login} text={msg.text} date={msg.date} my={msg.my} error={msg.error}/>
+        <Message key={index} login={msg.login} message={msg.message} date={msg.date} my={msg.my} error={msg.error}/>
           ))} 
       </div>
       ) : <div>Пока нет сообщений</div>

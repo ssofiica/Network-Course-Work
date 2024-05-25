@@ -8,13 +8,13 @@ import './style.css'
 
 type Props = {
   login: string
-  text: string
+  message: string
   date: string;
   my: boolean
   error: boolean
 }
 
-const Message: React.FC<Props> = ({ login, text, date, my, error }) => {
+const Message: React.FC<Props> = ({ login, message, date, my, error }) => {
   const dateTime = new Date(date);
   const hours = dateTime.getHours();
   const minutes = dateTime.getMinutes();
@@ -33,7 +33,7 @@ const Message: React.FC<Props> = ({ login, text, date, my, error }) => {
         </div>
         )}
         {error ? ( my ? <p className="text error">Ошибка доставки</p> : null) 
-          : (<p className="text">{text}</p>)}
+          : (<p className="text">{message}</p>)}
     </div>
   )
 }

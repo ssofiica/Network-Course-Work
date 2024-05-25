@@ -4,7 +4,7 @@ import { RootState } from '../store'
 
 interface Message {
     login: string;
-    text: string;
+    message: string;
     date: string;
     my: boolean;
     error: boolean;
@@ -24,7 +24,7 @@ const messageSlice = createSlice({
             if (payload) {
                 
             }
-            state.data[payload].text = ''
+            state.data[payload].message = ''
             state.data[payload].error = true
         },
         clearMessages(state) {
