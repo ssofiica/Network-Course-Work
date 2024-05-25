@@ -27,7 +27,7 @@ const Input: React.FC<Props> = ({ socket }) => {
         };
        
         dispatch(addMessageAction({ login: userName, message: message, date: da, my: true, error: false }))
-        socket.send(JSON.stringify(messageData));
+        //socket.send(JSON.stringify(messageData));
         setMessage('');
       }
   }  

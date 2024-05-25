@@ -23,7 +23,9 @@ wsServer.on('connection', client => {
     client.on('message', m => {
         const message = JSON.parse(m);
         const address = TRANSPORT_ADDRESS + '/api/v1/message'
-        axios.post(address, message).then(() => client.send(JSON.stringify({ message })));
+        axios.post(address, message).then(() => client.send(JSON.stringify(message))).catch(() => {
+            console.log('Транспортный уровень не найден')
+          });
     });
     client.on('close', () => {
         wsServer.clients.delete(client);
